@@ -323,5 +323,20 @@
     };
     run().catch(handleError);
   </script>
+<!-- iPhone Safari対応の透明リンクボタン -->
+<style>
+  .invisible-button {
+    position: absolute;
+    z-index: 9999;
+    display: block;
+    background: rgba(0,0,0,0);
+  }
+</style>
+
+<a href="/校舎案内?authuser=0" class="invisible-button" style="top: 15%; left: 70%; width: 25%; height: 10%;"></a>
+<a href="/開催概要/タイムテーブル" class="invisible-button" style="top: 85%; left: 80%; width: 15%; height: 10%;"></a>
+<a href="https://www.instagram.com/rikasai_ceh/" class="invisible-button" style="top: 80%; left: 10%; width: 20%; height: 10%;" target="_blank" rel="noopener"></a>
+<a href="https://chibaeiwa.ed.jp" class="invisible-button" style="top: 87%; left: 30%; width: 30%; height: 10%;" target="_blank" rel="noopener"></a>
+
 </body>
 </html>
